@@ -8,6 +8,17 @@ function createGrid(x) {
     $(".grid").width(960/x);
     $(".grid").height(960/x);
 };
+// function that clears the grid
+function clearGrid(){
+    $(".grid").remove();
+};  
 
+// function that prompts the user to select the number of boxes in a new grid
+// the function then also creates that new grid
+function refreshGrid(){
+    var z = prompt("How many boxes per side?");
+    clearGrid();
+    createGrid(z);
+};
 
  
